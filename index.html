@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>This is your new homepage. Get started by exploring what's possible.</p>
+        <div class="button-group">
+            <button class="btn-primary" onclick="greet()">Get Started</button>
+            <button class="btn-secondary" onclick="learnMore()">Learn More</button>
+        </div>
+        <div class="footer">
+            <p>&copy; 2026. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        function greet() {
+            alert('Welcome! You clicked the Get Started button.');
+        }
+        
+        function learnMore() {
+            alert('Visit this page to learn more about the project!');
+        }
+    </script>
+</body>
+</html>
