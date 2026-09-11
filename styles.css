@@ -1,5 +1,15 @@
 /* Main stylesheet for homepage */
 
+:root {
+    --blue-950: #102a43;
+    --blue-800: #1f4e79;
+    --blue-700: #28678f;
+    --blue-500: #4aa3df;
+    --blue-300: #8fd3f4;
+    --blue-100: #dff4ff;
+    --ice: #f4fbff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +18,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--blue-300) 0%, var(--blue-800) 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,22 +26,23 @@ body {
 }
 
 .container {
-    background: white;
+    background: var(--ice);
     border-radius: 10px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--blue-500);
+    box-shadow: 0 10px 40px rgba(16, 42, 67, 0.3);
     padding: 40px;
     max-width: 600px;
     text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: var(--blue-950);
     margin-bottom: 20px;
     font-size: 2.5em;
 }
 
 p {
-    color: #666;
+    color: var(--blue-800);
     line-height: 1.6;
     margin-bottom: 30px;
     font-size: 1.1em;
@@ -55,29 +66,29 @@ button {
 }
 
 .btn-primary {
-    background: #667eea;
-    color: white;
+    background: var(--blue-800);
+    color: var(--blue-100);
 }
 
 .btn-primary:hover {
-    background: #5568d3;
+    background: var(--blue-950);
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 20px rgba(16, 42, 67, 0.35);
 }
 
 .btn-secondary {
-    background: #f0f0f0;
-    color: #333;
+    background: var(--blue-500);
+    color: var(--blue-950);
 }
 
 .btn-secondary:hover {
-    background: #e0e0e0;
+    background: var(--blue-300);
 }
 
 .footer {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
-    color: #999;
+    border-top: 1px solid var(--blue-500);
+    color: var(--blue-700);
     font-size: 0.9em;
 }
